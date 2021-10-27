@@ -5,7 +5,7 @@
         [
             'titolo' => 'Harry Potter',
             'genere' => 'fantasy',
-            'nomeRegista' => 'Chris Columbus'
+            'nomeRegista' => 'Chris Columbus',
             'personaggi' => 'Harry',
         ]
     ];
