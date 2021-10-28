@@ -1,7 +1,7 @@
-<?php 
-    require_once __DIR__ .'/movie/movie.php';
+ <?php 
+  require_once __DIR__ .'/movie/movie.php';
 
-    $film = [
+    $films = [
         [
             'titolo' => 'Harry Potter',
             'genere' => 'fantasy',
@@ -13,6 +13,7 @@
 
 ; ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +23,24 @@
     <title>PHP OOP 1</title>
 </head>
 <body>
-    
+    <header></header>
+
+    <main>
+        <section>
+            <?php foreach ($films as $Hfilm){ 
+                $film = new Movie ($Hfilm['titolo'],
+                $Hfilm['genere']);
+            ?>
+            <section>
+                <h1><?= $film->getTitolo() ?></h1>
+                <p><?= $film->genere ?></p>
+            </section>
+
+            <?php } ?>
+            
+        </section>
+    </main>
+
 </body>
-</html>
+</html> 
+ 

@@ -4,14 +4,14 @@
         public $titolo;
         public $genere;
         public $nomeRegista;
-        public $personaggi;
+        public $personaggio;
 
-        function __construct($titolo, $genere, $nomeRegista, $personaggi){
+        function __construct($_titolo, $_genere, $_nomeRegista, $_personaggio){
 
-            $this->titolo = $titolo;
-            $this->genere = $genere;
-            $this->nomeRegista = $nomeRegista;
-            $this->personaggi = $personaggi;
+            $this->titolo = $_titolo;
+            $this->genere = $_genere;
+            $this->nomeRegista = $_nomeRegista;
+            $this->personaggio = $_personaggio;
             
         }
     
@@ -19,10 +19,21 @@
             return $this->titolo;
         }
 
-
-
     }
 
    
     
-; ?>
+?>
+
+<pre>
+    <?php 
+         
+         $movieA = new Movie ('Harry Potter', 'fantasy', 'Charles', 'Harry');
+         $movieB = new Movie ('The Holiday', 'comedy', 'Rob', 'Rick');
+
+         var_dump($movieA);
+         var_dump($movieB);
+    
+    ; ?>
+    
+</pre>
